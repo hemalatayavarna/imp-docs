@@ -1,0 +1,2 @@
+Name,Condition,Severity,Scope,Target resource type,Signal type,Status
+404 Resource Not Found Alert,Http404 > 2,Sev1,xyz-server-details-api,App Service,microsoft.insights/metricalerts,Enabled

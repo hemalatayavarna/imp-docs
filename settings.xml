@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<pluginGroups>
+		<pluginGroup>org.mule.tools</pluginGroup>
+	</pluginGroups>
+	<servers>
+		<server>
+			<id>MuleRepository</id>
+			<username>SADepartmentOfEducation.nexus</username>
+			<password>uX7NRdfkMNjm57DWzCJK</password>
+		</server>
+		<server>
+			<id>anypoint-exchange</id>
+			<username>~~~Client~~~</username>
+			<password>fff2ab8e94db487e9332c584a1d2823a~?~Fa4D57ccd5cB448a94e27DDf0d565Ae6</password>
+		</server>
+	</servers>
+	<mirrors/>
+	<profiles>
+		<profile>
+			<id>Mule</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>anypoint-exchange</id>
+					<name>Corporate Repository</name>
+					<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/e158212d-36c8-4172-830d-4c8c71836894/maven</url>
+					<layout>default</layout>
+				</repository>
+				<repository>
+					<id>mulesoft-releases</id>
+					<name>MuleSoft Repository</name>
+					<url>http://repository.mulesoft.org/releases/</url>
+					<layout>default</layout>
+				</repository>
+				<repository>
+					<id>mulesoft-snapshots</id>
+					<name>MuleSoft Snapshot Repository</name>
+					<url>http://repository.mulesoft.org/snapshots/</url>
+					<layout>default</layout>
+				</repository>
+				<repository>
+					<id>MuleRepository</id>
+					<name>MuleRepository</name>
+					<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>mulesoft-public</id>
+					<name>MuleSoft Public Repository</name>
+					<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+					<layout>default</layout>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+</settings>

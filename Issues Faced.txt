@@ -1,0 +1,3 @@
+Issues faced:
+1. You should have access to the error api to push your code into gitlab.
+2. you cant access the JMS if you add the configs in your project. need to use the ci/cd variables

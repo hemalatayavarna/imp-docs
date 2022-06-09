@@ -1,0 +1,107 @@
+Mulesoft account linked to dept email
+gitlab project setup
+ask security to add me into mulesoft group
+
+
+IDS
+
+
+Action Items:
+get access to the building
+
+ticket issue
+1. get the installations complete
+2. test the connectivity for all the 3 dbs
+3. test the account connection for MP access provided
+can we start implementation from this building
+2. start implementation for these flow
+
+[2:54 pm] Kralik, Claudia (ICT Systems Reform)
+EDUAZD09 - EMS database
+
+[2:55 pm] Kralik, Claudia (ICT Systems Reform)
+EDUGLD35 - CEDS Database
+
+[2:55 pm] Kralik, Claudia (ICT Systems Reform)
+EDUAZD17 - Masterpiece Database (MPData1)
+
+*************************************CEDS******************************************
+
+CEDS: EDUGLD35
+SSMS->
+WINDOWS AUTHENTICATION
+
+DB SNAPSHOT PRESENT
+RUN THE QUERY GIVEN TO US
+EDUGLD34:
+pernix_admin-@CEDsSysPernix48126134
+
+EDUGLD35
+pernix_admin-@CEDsPernix48126135
+Davinder:
+TB- 0.05Ssec/101238 rec
+TRANS- 3.21 sec/1,11,22,746 rec
+Hema: 
+TB - query incorrect - 0.15/100728
+TRANS - 0.09/489274
+
+EDUGLD36:
+pernix_admin-48126136@CEDsPernix
+mine: 0.05sec/489274rec
+LSS-FORM LSS.DBO.TBL_ORG_UNITS
+*************************************EMS******************************************
+
+EMS: EDUGLD67 -  CHECK with Troy whether he has any more details on that query he has sent
+EDUAZD09 - EMS Azure database have access
+
+EDUAZD09
+Davinder: None -troy
+Hema:
+
+*************************************MASTERPIECE******************************************
+MP: EDUGLD67 
+EDUAZD17 - Masterpiece Azure Database (MPData1) no access
+From Davinder- 
+0.36 sec/804604 rec - TB
+-0.29 sec/13,60,471 rec
+Mine:
+Trail bal data = 1.16 secs
+records - 804604 rows
+
+Transactions =12.40 sec/83,84,148 rec
+
+EMS:
+db.name/mq.broker.username/ KEY: EMSEncryptedValueKey
+config file token - EncryptionDecryptionToken
+
+IDP->EMS->DB: ems-db-system-api
+use public for the project
+
+gitlab:
+pawd: KV2pWS37ECFyazMT7XB8
+
+Timeout issue:
+Go to idp-openshift->services->select an application->select the route flow->actions->editYaml->add below details
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    haproxy.router.openshift.io/timeout: 120s
+	
+	
+Error Handling:
+1. CEDS uses SP and when column name changes the error is not proper
+2. if the access is revoked for teh particular view/table the connectivity error is not been shown
+3. if data is not coming for particular system API then a null value is passed, so if a null value is passed to the board api then a blank column is created for the same, which is not good
+
+Transform json-csv
+<ee:transform doc:name="Transform Message" doc:id="614f4820-277b-40d1-856a-61715bf27150" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/csv separator="|"
+---
+payload.payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+
+

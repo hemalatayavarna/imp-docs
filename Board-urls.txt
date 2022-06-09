@@ -1,0 +1,23 @@
+http://board-experience-api-service-idp-dev.idp.edudom02.sa.gov.au/api/v1/reports/trial-balance/transactions?source-system=CEDS&reporting-unit=160&year=2021&object-code=15118&object-code=6142&limit=20&page=1 cross check
+
+http://board-experience-api-service-idp-dev.idp.edudom02.sa.gov.au/api/v1/reports/trial-balance/transactions?source-system=EMS&reporting-unit=0160&year=2021&object-code=1333-03&limit=3&page=1 cross check
+
+http://board-experience-api-service-idp-dev.idp.edudom02.sa.gov.au/api/v1/reports/trial-balance/transactions?source-system=MP&ic-related-parties=0160&year=2021&object-code=75141&object-code=75145&object-code=75147&limit=40&page=1
+
+http://board-experience-api-idp-sit.idp.edudom02.sa.gov.au/api/v1/reports/trial-balance?year=2021&period=2&limit=30000&page=1
+
+202102	ACT	99	DEPT	373-13116-7017	7017	99	_	Masterpiece	1	99_CLO	1	10117.88	13116	Receivables - Sa Govt Preschoo
+
+202102	ACT	99	160	R-ZZG-6142	DEPT	99	1	EDSAS	1	99_CLO	4	-244262.42	6142	
+
+
+202102	ACT	99	160	A-ZZG-15118	DEPT	99	1	EDSAS	1	99_CLO	1	73315.05	15118	
+202102	ACT	99	160	R-ZZG-6142	DEPT	99	1	EDSAS	1	99_CLO	4	-244262.42	6142	
+
+
+15118 - 160 ru
+6142 - 160
+6817
+
+73315.05
+-244262.42

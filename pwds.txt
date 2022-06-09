@@ -1,0 +1,47 @@
+
+Mainframe UserID: EDCSHXY
+Temporary Password: winter01 
+@Aero30space@/@Aero30space@
+
+Sys id: YavarnaH
+pwd - normal 01
+
+Masterpiece:
+DB Host name: EDUAZD17 - 
+DB NameMPData1
+user: integration_mulesoft_user  
+pwd: k7tu3ikDb2io@
+
+gitlab:
+pawd: KV2pWS37ECFyazMT7XB8
+ 
+yViE96YvEJHtmbCSzSd1
+integration_mulesoft_user - k7tu3ikDb2io@
+Global Property:
+${secure.key} = EMSEncryptedValueKey - yViE96YvEJHtmbCSzSd1
+${env}=dev
+readTimeout="${http.read.timeout}"
+
+email.gateway.password: srevillpernixGM@1L1234
+
+${email.gateway.host}
+${email.gateway.port}
+${email.gateway.username}
+${email.gateway.password}
+
+-Dsecure.key=yViE96YvEJHtmbCSzSd1 -Denv=dev
+-Denv=local -Dsecure.key=yViE96YvEJHtmbCSzSd1
+-Dmq.broker.password=test -Dmq.broker.username=test 
+-Dmq.broker.url=tcp://localhost:61616?
+testcase-edit pwd : 1234567890
+Board EAPI:
+Token user: gitlab+deploy-token-59
+Token pwd: q7rymDU_prkzf_3xUiph
+
+financial-process-api-service
+
+New EMS & MP Password:
+k7tu3ikDb2io@
+user: integration_mulesoft_user
+
+db password - yViE96YvEJHtmbCSzSd1
